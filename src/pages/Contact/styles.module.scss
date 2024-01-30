@@ -2,16 +2,17 @@
 @import "../../styles/colors.scss";
 
 .contact {
-  padding-top: 100px;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding: 100px 27px 0;
 
   @include phone {
     padding-top: 60px;
+    gap: 20px;
   }
 
   & > * {
@@ -19,6 +20,10 @@
     width: 100%;
     text-transform: uppercase;
     font: 29px/1 "OCR-B";
+
+    @include phone {
+      font-size: 20px;
+    }
   }
 
   a {
