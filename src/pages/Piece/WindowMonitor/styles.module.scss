@@ -1,0 +1,51 @@
+@import "../../../styles/colors.scss";
+
+.window {
+  border: 1px solid $WINDOW_MONITOR_BORDER;
+  box-shadow: 0rem 0rem 10px 0 $SHADOW;
+}
+
+.caption {
+  height: 20px;
+  border-bottom: 1px solid $WINDOW_MONITOR_BORDER;
+  font: 10px/1 "Andale-Mono";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(/images/browserWindowBtns.svg);
+  background-repeat: no-repeat;
+  background-position: top 2px right 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $WINDOW_MONITOR_BORDER;
+  }
+}
+
+.proportionedWrap {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+
+.mediaPlayBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

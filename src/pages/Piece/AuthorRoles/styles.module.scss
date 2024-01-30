@@ -1,0 +1,7 @@
+.authorRoles {
+  font: 10px/1.6 "OCR-B";
+
+  span::after {
+    content: "; ";
+  }
+}

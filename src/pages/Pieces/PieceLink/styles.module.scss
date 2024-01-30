@@ -1,0 +1,116 @@
+@import "../../../styles/breakPoints.scss";
+@import "../../../styles/colors.scss";
+
+.pieceLink {
+  min-height: 275px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include phone {
+    margin-bottom: 75px;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    min-height: initial;
+  }
+
+  &:nth-of-type(odd) { 
+    align-items: flex-end;
+
+    @include phone {
+      align-items: center;
+    }
+  }
+}
+
+.title {
+  font: 29px / 1 "OCR-B";
+  text-transform: uppercase;
+  max-width: 60%;
+  margin: 32px 0 40px;
+  padding: 0 20px;
+
+  .pieceLink:nth-of-type(odd) & {
+    text-align: right;
+
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  @include phone {
+    margin: 0 0 15px;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.title,
+.subtitle {  
+  .shimmer & {
+    color: transparent;
+    background-color: $SHIMMER;
+  }
+}
+
+.animatedView {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  z-index: -1;
+
+  @include phone {
+    position: relative;
+    top: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .pieceLink:nth-of-type(even) & {
+    justify-content: flex-end;
+
+    @include phone {
+      justify-content: center;
+    }
+  }
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  max-width: 60%;
+  width: 100%;
+  padding: 0 20px;
+
+  @include phone {
+    max-width: 360px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.highlighted {
+  background-color: $HIGHLIGHTED;
+}
+
+.link {
+  font: 21px/48px "OCR-B";
+  height: 48px;
+  width: 191px;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: border-color 600ms;
+
+  &:hover {
+    border-color: $INTERACTIVE;
+  }
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $INTERACTIVE;
+  }
+}

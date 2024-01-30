@@ -1,0 +1,24 @@
+@import "../../../styles/colors.scss";
+
+.playButton {
+  $size: 24px;
+  width: $size;
+  height: $size;
+  background-repeat: no-repeat;
+  background-image: url(/images/togglePlaySprite.svg);
+  background-position: left;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 600ms;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+
+  &.playing {
+    background-position: right -1px center;
+  }
+
+  &:hover {
+    border-color: $INTERACTIVE;
+  }
+}

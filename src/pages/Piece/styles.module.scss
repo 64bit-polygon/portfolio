@@ -1,0 +1,29 @@
+@import "../../styles/breakPoints.scss";
+@import "../../styles/colors.scss";
+
+.piece {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px 40px;
+}
+
+.header {
+  margin-bottom: 15px;
+
+  & > *:first-child {
+    margin-bottom: 10px;
+  }
+  & > *:nth-child(2) {
+    margin-bottom: 13px;
+  }
+}
+
+.description {
+  padding: 0 35px;
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: underline;
+    color: $INTERACTIVE;
+  }
+}

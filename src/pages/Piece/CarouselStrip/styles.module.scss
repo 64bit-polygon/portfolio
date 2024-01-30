@@ -1,0 +1,14 @@
+.strip {
+  height: 100%;
+  transition: transform ease-out 600ms;
+}
+
+.innerWrap {
+  height: 100%;
+  display: flex;
+}
+
+.image {
+  height: 100%;
+  width: auto;
+}

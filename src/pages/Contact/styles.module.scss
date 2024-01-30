@@ -1,0 +1,27 @@
+@import "../../styles/breakPoints.scss";
+@import "../../styles/colors.scss";
+
+.contact {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  @include phone {
+    padding-top: 60px;
+  }
+
+  & > * {
+    max-width: 525px;
+    width: 100%;
+    text-transform: uppercase;
+    font: 29px/1 "OCR-B";
+  }
+
+  a {
+    color: $INTERACTIVE;
+  }
+}

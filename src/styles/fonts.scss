@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "Palatino-Italic";
+	src: url("/fonts/Palatino-Italic.woff2") format("woff2"),
+			 url("/fonts/Palatino-Italic.woff") format("woff"),
+			 url("/fonts/Palatino-Italic.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OCR-B";
+  src: url("/fonts/OCR-B.woff2") format("woff2"),
+			 url("/fonts/OCR-B.woff") format("woff"),
+			 url("/fonts/OCR-B.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Andale-Mono";
+  src: url("/fonts/Andale-Mono.woff2") format("woff2"),
+			 url("/fonts/Andale-Mono.woff") format("woff"),
+			 url("/fonts/Andale-Mono.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}

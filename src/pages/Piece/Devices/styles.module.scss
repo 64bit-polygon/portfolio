@@ -1,0 +1,29 @@
+.devices {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding-left: 1px;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.desktopIcon {
+  width: 22px;
+  height: 19px;
+  background-image: url(/images/desktopIcon.svg);
+}
+
+.tabletIcon {
+  width: 9px;
+  height: 15px;
+  background-image: url(/images/tabletIcon.svg);
+}
+
+.mobileIcon {
+  width: 6px;
+  height: 10px;
+  background-image: url(/images/mobileIcon.svg);
+}

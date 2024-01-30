@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/colors.scss";
+
+.phone {
+  position: relative;
+  width: $PHONE_WIDTH;
+  height: 430px;
+  background-image: url(/images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 0;
+    left: 7px;
+    z-index: -1;
+    box-shadow: 1px 1px 8px 0 $SHADOW;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 35px;
+  left: 16px;
+  width: 188px;
+  height: 339px;
+  overflow: hidden;
+}
+
+.mediaPlayBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}

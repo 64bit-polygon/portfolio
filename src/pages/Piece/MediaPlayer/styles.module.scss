@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+.media {
+  padding-top: 50px;
+}
+
+.desktopPlayer {
+  margin-bottom: 10px;
+}
+
+.mobilePlayer {
+  width: $PHONE_WIDTH;
+  margin: 0 auto;
+}

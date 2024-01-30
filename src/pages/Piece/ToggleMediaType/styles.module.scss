@@ -1,0 +1,40 @@
+@import "../../../styles/colors.scss";
+
+.toggleMediaType {
+  display: flex;
+  gap: 14px;
+}
+
+.button {
+  font: 10px/1 "OCR-B";
+  color: $INTERACTIVE;
+  text-transform: lowercase;
+  border-bottom: 1px solid transparent;
+  transition-property: border-bottom-color, color;
+  transition-duration: 500ms;
+
+  &:hover {
+    border-bottom-color: $INTERACTIVE;
+  }
+
+  &:first-of-type {
+    position: relative;
+
+    &::after {
+      content: "/";
+      color: $TEXT;
+      position: absolute;
+      top: 1px;
+      right: -11px;
+    }
+  }
+
+  &.inactive {
+    color: $TEXT;
+    cursor: default;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}

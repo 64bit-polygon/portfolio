@@ -1,0 +1,51 @@
+@import "../../../styles/colors.scss";
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 80px;
+}
+
+.imageSelection {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageSelector {
+  $size: 14px;
+  width: $size;
+  height: $size;
+  border: 1px solid $INTERACTIVE;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: $INTERACTIVE;
+    transition-property: transform;
+    transition-duration: 200ms;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateY(-50%);
+    }
+  }
+
+  &.active {
+    cursor: default;
+
+    &::after {
+      transform: translateY(-150%);
+    }
+  }
+}

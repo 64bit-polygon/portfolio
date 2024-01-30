@@ -1,0 +1,44 @@
+@import "../../../styles/colors.scss";
+
+.videoControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 80px;
+}
+
+.progressBar {
+  position: relative;
+  flex-grow: 10;
+  height: 19px;
+  cursor: col-resize;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-1px);
+    background-color: $INTERACTIVE;
+  }
+}
+
+.scrubber {
+  position: absolute;
+  width: 4px;
+  height: 13px;
+  top: calc(50% - 7px);
+  background-color: $BACKGROUND;
+  border: 1px solid $INTERACTIVE;
+  left: 0;
+  box-shadow: 0 0 0.2rem 0 $SCRUBBER_SHADOW;
+  pointer-events: none;
+  transition: left 300ms;
+
+  &.jumping {
+    transition: none;
+  }
+}

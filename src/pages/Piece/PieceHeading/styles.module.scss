@@ -1,0 +1,27 @@
+@import "../../../styles/breakPoints.scss";
+@import "../../../styles/colors.scss";
+
+.heading {
+  font: 29px/1 "OCR-B";
+  text-transform: uppercase;
+  text-indent: -5px;
+}
+
+.hasLink::after {
+  content: ": ";
+}
+
+.link {
+  color: $INTERACTIVE;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $INTERACTIVE;
+    height: 3px;
+    bottom: 2px;
+    left: 3px;
+    right: 0;
+  }
+}

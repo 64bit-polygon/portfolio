@@ -1,0 +1,176 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 365 225"
+>
+  <style>
+    .highlight {
+      opacity: 0;
+      transition: opacity 500ms;
+    }
+    .highlight.active {
+      opacity: 1;
+    }
+
+    .pie_line {
+      transform-origin: 50.5% 49%;
+      transition: transform 500ms;
+    }
+
+    #pie_line_1.position0 {
+      transform: rotate(0deg);
+    }
+
+    #pie_line_1.position1 {
+      transform: rotate(-10deg);
+    }
+
+    #pie_line_1.position2 {
+      transform: rotate(45deg);
+    }
+
+    #pie_line_2.position0 {
+      transform: rotate(225deg);
+    }
+
+    #pie_line_2.position1 {
+      transform: rotate(280deg);
+    }
+
+    #pie_line_2.position2 {
+      transform: rotate(300deg);
+    }
+
+    #pie_line_3.position0 {
+      transform: rotate(155deg);
+    }
+
+    #pie_line_3.position1 {
+      transform: rotate(190deg);
+    }
+
+    #pie_line_3.position2 {
+      transform: rotate(225deg);
+    }
+
+    #pie_line_4.position0 {
+      transform: rotate(115deg);
+    }
+
+    #pie_line_4.position1 {
+      transform: rotate(45deg);
+    }
+
+    #pie_line_4.position2 {
+      transform: rotate(170deg);
+    }
+
+    .pie_mask {
+      transform: translate(2px, 1px);
+    }
+  </style>
+
+  <path id="pie_drop_shadow" d="M181.04,205.043c-48.248,0-87.5-39.252-87.5-87.486c0-48.32,39.252-87.573,87.5-87.573
+    c48.224,0,87.476,39.252,87.476,87.573C268.516,165.791,229.264,205.043,181.04,205.043z M181.04,64.865
+    c-29.014,0-52.619,23.604-52.619,52.691c0,29.002,23.605,52.604,52.619,52.604c28.989,0,52.593-23.604,52.593-52.604
+    C233.633,88.469,210.029,64.865,181.04,64.865z"/>
+
+  <path id="whole_pie" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M183.602,196.961c-48.245,0-87.497-39.252-87.497-87.523
+    c0-48.283,39.252-87.536,87.497-87.536c48.227,0,87.479,39.252,87.479,87.536C271.08,157.709,231.828,196.961,183.602,196.961z
+    M183.602,56.783c-29.011,0-52.616,23.604-52.616,52.654c0,29.04,23.605,52.643,52.616,52.643
+    c28.992,0,52.597-23.604,52.597-52.643C236.198,80.387,212.596,56.783,183.602,56.783z"/>
+    
+  <rect id="pie_line_1" class="pie_line position1" mask="url(#pie_line_mask_1)" x="183" y="110" width="1" height="95" fill="#000000"/>
+  <rect id="pie_line_2" class="pie_line position1" mask="url(#pie_line_mask_2)" x="183" y="110" width="1" height="95" fill="#000000"/>
+  <rect id="pie_line_3" class="pie_line position1" mask="url(#pie_line_mask_3)" x="183" y="110" width="1" height="95" fill="#000000"/>
+  <rect id="pie_line_4" class="pie_line position1" mask="url(#pie_line_mask_4)" x="183" y="110" width="1" height="95" fill="#000000"/>
+
+
+  <defs>
+    <mask id="pie_line_mask_1">
+      <path class="pie_mask" fill="#FFFFFF" d="M184.1,20.901c-48.518,0-87.995,39.477-87.995,88.034
+        c0,48.549,39.477,88.026,87.995,88.026c48.504,0,87.98-39.477,87.98-88.026C272.08,60.378,232.604,20.901,184.1,20.901z
+        M184.1,161.08c-28.732,0-52.114-23.381-52.114-52.145c0-28.772,23.381-52.152,52.114-52.152c28.719,0,52.099,23.38,52.099,52.152
+        C236.198,137.699,212.818,161.08,184.1,161.08z"/>
+    </mask>
+    <mask id="pie_line_mask_2">
+      <path class="pie_mask" fill="#FFFFFF" d="M184.1,20.901c-48.518,0-87.995,39.477-87.995,88.034
+        c0,48.549,39.477,88.026,87.995,88.026c48.504,0,87.98-39.477,87.98-88.026C272.08,60.378,232.604,20.901,184.1,20.901z
+        M184.1,161.08c-28.732,0-52.114-23.381-52.114-52.145c0-28.772,23.381-52.152,52.114-52.152c28.719,0,52.099,23.38,52.099,52.152
+        C236.198,137.699,212.818,161.08,184.1,161.08z"/>
+    </mask>
+    <mask id="pie_line_mask_3">
+      <path class="pie_mask" fill="#FFFFFF" d="M184.1,20.901c-48.518,0-87.995,39.477-87.995,88.034
+        c0,48.549,39.477,88.026,87.995,88.026c48.504,0,87.98-39.477,87.98-88.026C272.08,60.378,232.604,20.901,184.1,20.901z
+        M184.1,161.08c-28.732,0-52.114-23.381-52.114-52.145c0-28.772,23.381-52.152,52.114-52.152c28.719,0,52.099,23.38,52.099,52.152
+        C236.198,137.699,212.818,161.08,184.1,161.08z"/>
+    </mask>
+    <mask id="pie_line_mask_4">
+      <path class="pie_mask" fill="#FFFFFF" d="M184.1,20.901c-48.518,0-87.995,39.477-87.995,88.034
+        c0,48.549,39.477,88.026,87.995,88.026c48.504,0,87.98-39.477,87.98-88.026C272.08,60.378,232.604,20.901,184.1,20.901z
+        M184.1,161.08c-28.732,0-52.114-23.381-52.114-52.145c0-28.772,23.381-52.152,52.114-52.152c28.719,0,52.099,23.38,52.099,52.152
+        C236.198,137.699,212.818,161.08,184.1,161.08z"/>
+    </mask>
+  </defs>
+
+  <path id="pie_text_3" fill="none" stroke="#0000FF" stroke-miterlimit="10" d="M19,209.389c1.238,0,2.418-0.473,3.313-1.312
+    c0.056-0.062,0.435-0.433,0.435-0.433c0.969-1.022,2.272-1.59,3.676-1.59c1.404,0,2.707,0.564,3.675,1.59
+    c0,0,0.379,0.371,0.434,0.433c0.895,0.842,2.075,1.312,3.314,1.312c1.238,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.272-1.59,3.675-1.59c1.404,0,2.708,0.564,3.676,1.59
+    c0,0,0.38,0.371,0.434,0.433c0.896,0.842,2.076,1.312,3.314,1.312c1.237,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.271-1.59,3.676-1.59c1.403,0,2.707,0.564,3.676,1.59
+    c0,0,0.379,0.371,0.434,0.433c0.896,0.842,2.076,1.312,3.312,1.312c1.239,0,2.419-0.473,3.314-1.312
+    c0.057-0.062,0.435-0.433,0.435-0.433c0.968-1.022,2.271-1.59,3.676-1.59c1.403,0,2.707,0.564,3.676,1.59
+    c0,0,0.379,0.371,0.435,0.433c0.895,0.842,2.075,1.312,3.312,1.312c1.238,0,2.419-0.473,3.313-1.312
+    c0.056-0.062,0.436-0.433,0.436-0.433c0.968-1.022,2.271-1.59,3.675-1.59"/>
+  <path id="pie_text_2" fill="none" stroke="#0000FF" stroke-miterlimit="10" d="M19,196.055c1.238,0,2.418-0.473,3.313-1.312
+    c0.056-0.062,0.435-0.433,0.435-0.433c0.969-1.022,2.272-1.59,3.676-1.59c1.404,0,2.707,0.564,3.675,1.59
+    c0,0,0.379,0.371,0.434,0.433c0.895,0.842,2.075,1.312,3.314,1.312c1.238,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.272-1.59,3.675-1.59c1.404,0,2.708,0.564,3.676,1.59
+    c0,0,0.38,0.371,0.434,0.433c0.896,0.842,2.076,1.312,3.314,1.312c1.237,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.271-1.59,3.676-1.59"/>
+  <path id="pie_text_1" fill="none" stroke="#0000FF" stroke-miterlimit="10" d="M19,183.389c1.238,0,2.418-0.473,3.313-1.312
+    c0.056-0.062,0.435-0.433,0.435-0.433c0.969-1.022,2.272-1.59,3.676-1.59c1.404,0,2.707,0.564,3.675,1.59
+    c0,0,0.379,0.371,0.434,0.433c0.895,0.842,2.075,1.312,3.314,1.312c1.238,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.272-1.59,3.675-1.59c1.404,0,2.708,0.564,3.676,1.59
+    c0,0,0.38,0.371,0.434,0.433c0.896,0.842,2.076,1.312,3.314,1.312c1.237,0,2.418-0.473,3.314-1.312
+    c0.055-0.062,0.434-0.433,0.434-0.433c0.967-1.022,2.271-1.59,3.676-1.59c1.403,0,2.707,0.564,3.676,1.59
+    c0,0,0.379,0.371,0.434,0.433c0.896,0.842,2.076,1.312,3.312,1.312c1.239,0,2.419-0.473,3.314-1.312
+    c0.057-0.062,0.435-0.433,0.435-0.433c0.968-1.022,2.271-1.59,3.676-1.59"/>
+  
+  <rect id="pie_click_1" class="highlight active" x="18" y="178" fill="#0000FF" width="54" height="7"/>
+  <rect id="pie_click_2" class="highlight" x="18" y="191" fill="#0000FF" width="39" height="7"/>
+  <rect id="pie_click_3" class="highlight" x="18" y="204" fill="#0000FF" width="69" height="7"/>
+
+  <script type="text/ecmascript">
+  <![CDATA[
+    window.onload = function() {
+      let cnt = 1;
+      const highlight1 = document.getElementById("pie_click_1");
+      const highlight2 = document.getElementById("pie_click_2");
+      const highlight3 = document.getElementById("pie_click_3");
+      const hightlights = [highlight1, highlight2, highlight3];
+
+      const line1 = document.getElementById("pie_line_1");
+      const pieLines = document.querySelectorAll(".pie_line");
+
+
+      function setNextHighlight(nextHighlight) {
+        const currentHightlight = document.querySelector(".highlight.active");
+        currentHightlight.classList.remove("active");
+        nextHighlight.classList.add("active");
+      }
+
+      window.setInterval(() => {
+        setNextHighlight(hightlights[cnt]);
+        const nextCnt = cnt + 1 < hightlights.length ? cnt + 1 : 0; 
+        pieLines.forEach((pieLineElem) => {
+          pieLineElem.classList.remove(`position${cnt}`);
+          pieLineElem.classList.add(`position${nextCnt}`);
+        });
+        cnt = nextCnt;
+      }, 3000);
+    };
+  ]]>
+  </script>
+</svg>
