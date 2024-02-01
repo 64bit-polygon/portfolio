@@ -14,8 +14,8 @@ function App() {
     if (!pieces) {
       const getPieces = async () => {
         const snapshot = await getDocs(content);
-        const pieces = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
-        setPieces(pieces);
+        const piecesFromDB = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
+        setPieces(piecesFromDB);
       };
 
       getPieces();
