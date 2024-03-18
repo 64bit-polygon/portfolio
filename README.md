@@ -9,10 +9,15 @@ The app is built using [React](https://react.dev/) with [Vite](https://vitejs.de
 ## Structure
 
 **`src/pages`**: Holds specific views (Contact, etc) and view-specific components.
+
 **`src/components`**: Holds components shared across views.
+
 **`src/state`**: Holds global state files related to `recoil` state (`atoms` and `selector` definations).
+
 **`src/styles`**: Defines all universal styles, `CSS` resets, and style variables.
+
 **`src/App.jsx`**: Controls the `GET` call to the `firestore database` to get the posts and then adds them to the global state.
+
 **`src/main.jsx`**: The main entry point into the app, holds the `<BrowserRouter />`.
 
 ## Global state management
