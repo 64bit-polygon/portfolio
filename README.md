@@ -1,6 +1,6 @@
 # [natedelacruz.com](https://natedelacruz.com/)
 
-This is my calling card portfolio site, showcasing some of the work I've done over the past decade. This code is live at [`https://natedelacruz.com/`](https://natedelacruz.com/). I am a fullstack developer with a designer's eye, based in NYC.
+This is my calling card portfolio site, showcasing some of the work I've done over the past decade. This code is live at [https://natedelacruz.com/](https://natedelacruz.com/). I am a fullstack developer with a designer's eye, based in NYC.
 
 ## Frontend frameworks
 
