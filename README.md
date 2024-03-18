@@ -54,7 +54,7 @@ Given the small amount of posts, and this app is not for general use, it makes s
   "desktopCarouselCaptions": ["String"],
   "desktopCarouselUrls": ["String"],
   "desktopVideoCaptions": {
-    "timeStamp:Integer": "String"
+    "TimeStamp:Integer": "String"
   },
   "desktopVideoPoster": "String",
   "desktopVideoUrl": "String",
