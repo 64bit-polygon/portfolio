@@ -27,6 +27,7 @@ The only data held in the global state is the response data holding info for the
 ## Static assets
 
 **`/public/images`**: images
+
 **`/public/fonts`**: fonts
 
 To reference them in a component or `.scss` file, `Vite` assumes all relative URLs from the `/public` directory as a base:
