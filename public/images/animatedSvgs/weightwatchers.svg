@@ -105,22 +105,24 @@
 	}
 
 	@keyframes CARET_BLINK {
-		0%     { opacity: 0; }
-		50%    { opacity: 0; }
-		50.01% { opacity: 1; }
-		100%   { opacity: 1; }
+		0%     { fill: transparent; }
+		50%    { fill: transparent; }
+		51% { fill: #939393; }
+		100%   { fill: #939393; }
 	}
 
 	#caret {
-		opacity: 0;
+		fill: transparent;
 	}
 
 	#caret.visible {
-		opacity: 1;
+		fill: #939393;
 	}
 
 	#caret.blinking {
-		animation: CARET_BLINK 1s linear infinite;
+		position: relative;
+		-moz-animation: CARET_BLINK 1000ms linear infinite;
+		animation: CARET_BLINK 1000ms linear infinite;
 	}
 
 	#caretGroup {
@@ -1511,7 +1513,6 @@ window.onload = function() {
 
 		window.setTimeout(() => {
 			caret.classList.add("blinking");
-
 			secondScene();
 		}, 1200);
 	}

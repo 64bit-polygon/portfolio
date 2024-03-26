@@ -5,18 +5,18 @@
     }
 
     @keyframes CARET_BLINK {
-      0%     { opacity: 0; }
-      50%    { opacity: 0; }
-      50.01% { opacity: 1; }
-      100%   { opacity: 1; }
+      0%     { fill: transparent; }
+      50%    { fill: transparent; }
+      50.01% { fill: #000; }
+      100%   { fill: #000; }
     }
 
     .caret {
-      opacity: 0;
+      fill: transparent;
     }
 
     .caret.visible {
-      opacity: 1;
+      fill: #000;
     }
 
     .caret.blinking {
@@ -24,8 +24,8 @@
     }
 
     @keyframes CARET_SHOW {
-      0%     { opacity: 1; }
-      100%   { opacity: 1; }
+      0%     { fill: #000; }
+      100%   { fill: #000; }
     }
 
     .caret.animate {
